@@ -1,0 +1,128 @@
+.layout {
+  display: grid;
+  grid-template-columns: 320px 1fr 340px;
+  min-height: 100vh;
+  background: var(--color-editor-bg);
+}
+.panel h2 {
+  font-size: 22px;
+}
+.panel {
+  background: var(--color-white);
+  border-inline-end: 1px solid var(--color-border);
+  padding: 20px 10px;
+  overflow: auto;
+  max-height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+.preview {
+  overflow: auto;
+  max-height: 100vh;
+  background: var(--color-bg);
+  border-inline: 1px solid var(--color-border);
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.heading {
+  margin: 0 0 12px;
+  color: var(--color-text);
+}
+
+.sectionTitle {
+  margin: 20px 0 10px;
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+.sectionItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  margin-bottom: 10px;
+  background: var(--color-white);
+  cursor: pointer;
+}
+
+.sectionItemActive {
+  border-color: var(--color-orange);
+  background: var(--color-cream);
+}
+
+.row {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.typeGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.typeCard {
+  border: 1px dashed var(--color-border);
+  background: var(--color-gray);
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  text-align: right;
+}
+
+.typeCard strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--color-text);
+}
+
+.typeCard span {
+  font-size: 12px;
+  color: var(--color-muted);
+}
+
+.notFoundWrap {
+  padding: 32px;
+}
+
+.addSectionTitle {
+  margin-top: 20px;
+}
+
+.banner {
+  padding: 10px 12px;
+  border-radius: 10px;
+  margin: 12px 0;
+  background: var(--color-success-bg);
+  color: var(--color-green-dark);
+}
+
+.bannerError {
+  background: var(--color-error-bg);
+  color: var(--color-danger);
+}
+
+@media (max-width: 1024px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .panel,
+  .preview {
+    position: static;
+    max-height: none;
+    border-inline-end: none;
+    border-bottom: 1px solid var(--color-border);
+  }
+}

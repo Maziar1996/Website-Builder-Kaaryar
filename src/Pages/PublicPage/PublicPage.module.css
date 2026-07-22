@@ -1,0 +1,26 @@
+.stateBox {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 32px;
+  text-align: center;
+}
+
+.title {
+  color: var(--color-text);
+  margin: 0;
+}
+
+.description {
+  color: var(--color-muted);
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}

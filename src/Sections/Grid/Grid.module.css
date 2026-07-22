@@ -1,0 +1,415 @@
+.wrap {
+  padding: 16px 32px 48px;
+}
+
+.inner {
+  max-width: 1216px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.grid {
+  width: 100%;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(var(--grid-columns, 1), minmax(0, 1fr));
+}
+
+.card {
+  background: var(--color-white);
+  border-radius: 40px;
+  box-shadow: 0 0 16px rgba(179, 179, 179, 0.25);
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-end;
+}
+
+.cardMedia {
+  width: 100%;
+  max-width: 289px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+  align-self: center;
+}
+
+.showcaseGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.showcaseCard {
+  background: var(--color-white);
+  border-radius: 24px;
+  box-shadow: 0 0 16px rgba(179, 179, 179, 0.15);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.showcaseBrand {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.showcaseBrand img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.showcaseImage {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.showcaseImagePlaceholder {
+  width: 100%;
+  height: 220px;
+  background: var(--color-gray);
+  border-radius: 12px;
+}
+
+.showcaseContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  text-align: right;
+}
+
+.projectsSlideshowWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.slideTrackOuter {
+  flex: 1;
+  overflow: hidden;
+  box-shadow: 0px 0px 16px rgba(179, 179, 179, 0.25);
+  border-radius: 40px;
+}
+
+.slideTrack {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.slideCard {
+  width: 100%;
+  height: 100%;
+  max-width: 1048px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 40px;
+  padding: 32px 96px 32px 24px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  min-height: 415px;
+}
+
+.slideImage {
+  width: 497px;
+  height: 351px;
+  object-fit: contain;
+  border-radius: 16px;
+  flex-shrink: 0;
+}
+
+.slideImagePlaceholder {
+  width: 289px;
+  height: 359px;
+  background: var(--color-gray);
+  border-radius: 16px;
+  flex-shrink: 0;
+}
+
+.slideContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  text-align: right;
+}
+
+.slideBrandRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.slideBrandLogo {
+  height: 70px;
+  width: 70px;
+  object-fit: contain;
+}
+
+.navButton {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #f6f6f6;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+  color: #5c6a63;
+}
+.navButton:hover {
+  background: #ebebeb;
+}
+.navButton:focus-visible {
+  outline: 2px solid var(--color-orange, #ff7a00);
+  outline-offset: 2px;
+}
+
+.navButton svg {
+  width: 32px;
+  height: 32px;
+  stroke: #5c6a63;
+}
+
+.navLeft {
+  order: -1;
+}
+.navRight {
+  order: 1;
+}
+
+.projectsDots {
+  margin-top: 0;
+}
+.projectsDots .dot {
+  background: rgba(30, 169, 101, 0.3);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.projectsDots .dotActive {
+  background: #1ea965;
+  width: 32px;
+  height: 12px;
+  border-radius: 8px;
+}
+
+/* ─── Team Carousel ─── */
+
+.slideshowContainer {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.teamCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+  width: 100%;
+}
+
+.avatarFrame {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  border-radius: 20px 76px 20px 20px;
+}
+
+.avatarFrame img {
+  top: -8px;
+  left: 0;
+  width: 200px;
+  height: 205px;
+  position: absolute;
+  object-fit: contain;
+  background-size: center;
+}
+
+.dots {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(128, 128, 128, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.dot:focus-visible {
+  outline: 2px solid var(--color-orange, #ff7a00);
+  outline-offset: 2px;
+}
+
+.dotActive {
+  background: var(--color-orange);
+  transform: scale(1.2);
+}
+
+/* ─── Logos ─── */
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 148px;
+  margin-top: 50px;
+  padding: 12px 0;
+}
+
+.logoImage {
+  height: 48px;
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+}
+
+.itemHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.addButton {
+  width: 100%;
+  margin-top: 4px;
+}
+
+.servicesGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  margin-top: 24px;
+}
+
+.serviceCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+  padding: 24px;
+  background: var(--color-white);
+  border-radius: 24px;
+  box-shadow: 0 0 12px rgba(1, 184, 122, 0.16);
+  text-align: right;
+}
+
+.serviceIcon {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  background: var(--color-green-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.serviceIcon img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .wrap {
+    padding: 16px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .showcaseGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .slideCard {
+    flex-direction: column-reverse;
+    padding: 24px 20px;
+    min-height: unset;
+    max-width: 320px;
+    max-height: 640px;
+    align-items: center;
+    gap: 0px;
+  }
+  .slideContent {
+    gap: 0px;
+  }
+  .slideContent h3 {
+    font-size: 14px;
+  }
+  .slideContent p {
+    font-size: 12px;
+  }
+  .slideImage {
+    width: 100%;
+    max-width: 193px;
+    max-height: 217px;
+  }
+  .slideImagePlaceholder {
+    width: 100%;
+    max-width: 289px;
+    height: 220px;
+  }
+
+  .navButton {
+    width: 40px;
+    height: 40px;
+  }
+  .navButton svg {
+    width: 24px;
+    height: 24px;
+  }
+  .servicesGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .serviceCard {
+    align-items: center;
+    text-align: center;
+  }
+}

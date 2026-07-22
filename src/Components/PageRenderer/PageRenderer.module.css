@@ -1,0 +1,41 @@
+.pageRoot {
+  min-height: 100vh;
+  background: var(--color-bg);
+}
+
+.shell {
+  position: relative;
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+  cursor: default;
+  transition: outline-color 0.15s ease;
+}
+
+.editableShell {
+  cursor: pointer;
+}
+
+.selectedShell {
+  outline-color: var(--color-orange);
+}
+
+.editableShell:hover {
+  outline-color: var(--color-green-soft);
+}
+
+.sectionLabel {
+  position: absolute;
+  top: 8px;
+  inset-inline-start: 8px;
+  z-index: 2;
+  background: var(--color-orange);
+  color: var(--color-white);
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.unknownSection {
+  padding: 24px;
+  color: var(--color-danger);
+}
