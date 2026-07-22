@@ -30,54 +30,6 @@ A simple **visual website builder** with an admin panel and public frontend, bui
 | Backend   | json-server (REST API) |
 | Build     | Vite                   |
 
-## Project Structure
-
-plain
-kaaryar-website-builder/
-├── public/
-│ ├── icons/ # SVG icons and decorative assets
-│ └── images/ # Static images (logos, team, testimonials, etc.)
-├── src/
-│ ├── App/
-│ │ ├── App.jsx # Root router setup
-│ │ └── Routes.jsx # Route definitions
-│ ├── Components/
-│ │ ├── PageRenderer/ # Shared page rendering engine
-│ │ └── UI/ # Reusable UI primitives (Button, Input, Heading, etc.)
-│ ├── Hooks/
-│ │ └── useSlideshow.js # Custom hook for carousels and slideshows
-│ ├── Pages/
-│ │ ├── AdminDashboard/ # Page list and creation
-│ │ ├── PageEditor/ # Visual editor (3-panel layout)
-│ │ ├── PublicPage/ # Public site renderer
-│ │ └── NotFound/ # 404 page
-│ ├── Sections/
-│ │ ├── registry.js # Section type registry
-│ │ ├── defaults.js # Default data for all section types
-│ │ ├── Header/
-│ │ ├── Hero/
-│ │ ├── Features/
-│ │ ├── Grid/
-│ │ ├── Process/
-│ │ ├── Testimonials/
-│ │ ├── CTA/
-│ │ ├── FAQ/
-│ │ ├── Contact/
-│ │ ├── Footer/
-│ │ └── Content/
-│ ├── Shared/
-│ │ ├── API/ # HTTP client and page API
-│ │ ├── Styles/ # Global CSS and CSS variables
-│ │ └── Utils/ # Helper utilities (slug, text, array, id)
-│ ├── Store/
-│ │ └── pageStore.js # Zustand store for global state
-│ └── main.jsx # Application entry point
-├── db.json # json-server database (pages and sections)
-├── index.html # HTML entry point (RTL, Vazirmatn font)
-├── package.json
-├── vite.config.js # Vite config with API proxy
-└── eslint.config.js # ESLint flat config
-
 ## 🚀 Quick Start
 
 ### Prerequisites
