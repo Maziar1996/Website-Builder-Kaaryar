@@ -1,4 +1,4 @@
-const API_BASE = "/api";
+const API_BASE = "https://kwb-backend.onrender.com";
 
 function buildUrl(path, params) {
   const url = `${API_BASE}${path}`;
